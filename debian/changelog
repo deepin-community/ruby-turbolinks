@@ -1,0 +1,49 @@
+ruby-turbolinks (5.1.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Reupload to unstable
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Move debian/watch to gemwatch.debian.net
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 07 Jan 2019 00:39:17 +0530
+
+ruby-turbolinks (5.1.1-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Delete deprecated patches
+     - engine-root.patch
+     - gitlab-turbolinks-classic2.5.6.patch
+
+ -- Sruthi Chandran <srud@disroot.org>  Sat, 05 May 2018 16:53:54 +0530
+
+ruby-turbolinks (2.5.3-3) unstable; urgency=medium
+
+  * Team upload
+  * Apply gitlab-turbolinks-classic changes as patch 
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 18 Jan 2017 11:05:37 +0530
+
+ruby-turbolinks (2.5.3-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Antonio Terceiro <terceiro@debian.org>  Sat, 12 Dec 2015 16:22:23 -0200
+
+ruby-turbolinks (2.5.3-1) experimental; urgency=medium
+
+  * New upstream release
+  * Update packaging with a new dh-make-ruby run
+
+ -- Antonio Terceiro <terceiro@debian.org>  Fri, 14 Aug 2015 10:48:32 -0300
+
+ruby-turbolinks (2.2.2-1) unstable; urgency=low
+
+  [ Jonas Genannt ]
+  * Initial release (Closes: #739158)
+
+  [ Antonio Terceiro ]
+  * debian/patches/engine-root.patch: read assets from
+    /usr/share/ruby-turbolinks, where we install assets to.
+
+ -- Antonio Terceiro <terceiro@debian.org>  Sat, 02 Aug 2014 16:00:42 -0300

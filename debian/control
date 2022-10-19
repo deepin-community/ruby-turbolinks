@@ -1,0 +1,38 @@
+Source: ruby-turbolinks
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Jonas Genannt <jonas.genannt@capi2name.de>,
+Build-Depends: debhelper (>= 11~),
+               gem2deb,
+               rake,
+               ruby-coffee-rails,
+               ruby-turbolinks-source (>= 5.1),
+               ruby-turbolinks-source (<< 6.0)
+Standards-Version: 4.3.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-turbolinks.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-turbolinks
+Homepage: https://github.com/rails/turbolinks/
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-turbolinks
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-coffee-rails,
+         ruby-turbolinks-source (>= 5.1),
+         ruby-turbolinks-source (<< 6.0),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: following links in your Rails web application faster
+ Turbolinks makes following links in your Rails web application faster. Instead
+ of letting the browser recompile the JavaScript and CSS between each page
+ change, it keeps the current page instance alive and replaces only the body
+ and the title in the head. Think CGI vs persistent process.
+ .
+ This is similar to pjax, but instead of worrying about what element on the
+ page to replace, and tailoring the server-side response to fit, the entire
+ body is replaced. This means that you get the bulk of the speed benefits from
+ pjax (no recompiling of the JavaScript or CSS) without having to tailor the
+ server-side response. It just works.
